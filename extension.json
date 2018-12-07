@@ -8,6 +8,9 @@
 	"descriptionmsg": "bs-qr-code-extension-description",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:QrCode",
 	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
