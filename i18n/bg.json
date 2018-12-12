@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"bs-qr-code-extension-description": "Показва QR-код с връзка към текъщата страница от лентата за инструменти",
+	"bs-qr-code-title": "QR-код",
+	"bs-qr-code-text": "Сканирайте QR-кода за да отворите страницата на мобилно устройство"
+}
