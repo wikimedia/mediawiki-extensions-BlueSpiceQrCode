@@ -2,7 +2,6 @@
 
 namespace BlueSpice\QrCode\Hook\BeforePageDisplay;
 
-
 class AddRessources extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function doProcess() {

@@ -22,7 +22,7 @@ class AddQrCode extends SkinTemplateOutputPageBeforeExec {
 			[
 				'qrcode' => [
 					'position' => 100,
-					'callback' => function( $sktemplate ) {
+					'callback' => function ( $sktemplate ) {
 						return new Panel( $sktemplate );
 					}
 				]

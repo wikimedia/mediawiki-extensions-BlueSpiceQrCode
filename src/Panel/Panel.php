@@ -10,7 +10,7 @@ class Panel extends BasePanel {
 	 * @return \Message
 	 */
 	public function getTitleMessage() {
-		return \Message::newFromKey( 'bs-qr-code-title' );;
+		return \Message::newFromKey( 'bs-qr-code-title' );
 	}
 
 	/**
