@@ -31,4 +31,12 @@ class Panel extends BasePanel {
 		return \Html::rawElement( 'div', [ 'class' => 'scanQrCode' ], $span )
 			. \Html::element( 'img', [ 'class' => 'qrCodeImage', 'src' => $src ] );
 	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	public function getPanelCollapseState() {
+		return true;
+	}
 }
