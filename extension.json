@@ -9,7 +9,10 @@
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:QrCode",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.31.0"
+		"MediaWiki": "~1.31",
+		"extensions": {
+			"BlueSpiceFoundation": "~3.1"
+		}
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
