@@ -25,11 +25,12 @@ class Panel extends BasePanel {
 		$src = 'data:image/png;base64,' . base64_encode( $qrCode->writeString() );
 
 		$msg = \Message::newFromKey( 'bs-qr-code-text' );
+		$alttext = \Message::newFromKey( 'bs-qr-code-title' );
 
 		$span = \Html::element( 'p', [], $msg->plain() );
 
 		return \Html::rawElement( 'div', [ 'class' => 'scanQrCode' ], $span )
-			. \Html::element( 'img', [ 'class' => 'qrCodeImage', 'src' => $src ] );
+			. \Html::element( 'img', [ 'class' => 'qrCodeImage', 'src' => $src, 'alt' => $alttext ] );
 	}
 
 	/**
