@@ -10,7 +10,7 @@ class Panel extends BasePanel {
 	 * @return \Message
 	 */
 	public function getTitleMessage() {
-		return \Message::newFromKey( 'bs-qr-code-title' );;
+		return \Message::newFromKey( 'bs-qr-code-title' );
 	}
 
 	/**
@@ -25,10 +25,19 @@ class Panel extends BasePanel {
 		$src = 'data:image/png;base64,' . base64_encode( $qrCode->writeString() );
 
 		$msg = \Message::newFromKey( 'bs-qr-code-text' );
+		$alttext = \Message::newFromKey( 'bs-qr-code-title' );
 
 		$span = \Html::element( 'p', [], $msg->plain() );
 
 		return \Html::rawElement( 'div', [ 'class' => 'scanQrCode' ], $span )
-			. \Html::element( 'img', [ 'class' => 'qrCodeImage', 'src' => $src ] );
+			. \Html::element( 'img', [ 'class' => 'qrCodeImage', 'src' => $src, 'alt' => $alttext ] );
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	public function getPanelCollapseState() {
+		return true;
 	}
 }
