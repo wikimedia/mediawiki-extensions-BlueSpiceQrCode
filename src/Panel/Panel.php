@@ -4,6 +4,7 @@ namespace BlueSpice\QrCode\Panel;
 
 use Endroid\QrCode\QrCode;
 use BlueSpice\Calumma\Panel\BasePanel;
+use Skins\Chameleon\IdRegistry;
 
 class Panel extends BasePanel {
 	/**
@@ -35,9 +36,49 @@ class Panel extends BasePanel {
 
 	/**
 	 *
+	 * @var string
+	 */
+	protected $htmlId = null;
+
+	/**
+	 * The HTML ID for thie component
+	 * @return string
+	 */
+	public function getHtmlId() {
+		if ( $this->htmlId === null ) {
+			$this->htmlId = IdRegistry::getRegistry()->getId( 'bs-qr-code-panel' );
+		}
+
+		return $this->htmlId;
+	}
+
+	/**
+	 *
 	 * @return bool
 	 */
 	public function getPanelCollapseState() {
-		return true;
+		$cookieName = $this->getCookiePrefix() . $this->htmlId;
+		$request = $this->skintemplate->getSkin()->getRequest();
+		$cookie = $request->getCookie( $cookieName );
+
+		if ( $cookie === 'false' ) {
+			return false;
+		} elseif ( $cookie === 'true' ) {
+			return true;
+		}
+
+		$states = $this->skintemplate->getSkin()->getConfig()->get(
+				'BlueSpiceCalummaPanelCollapseState'
+			);
+
+		if ( !$states || !array_key_exists( $this->htmlId, $states ) ) {
+			return true;
+		}
+
+		if ( $states[$this->htmlId] === true || $states[$this->htmlId] === 1 ) {
+			return true;
+		}
+
+		return false;
 	}
 }
