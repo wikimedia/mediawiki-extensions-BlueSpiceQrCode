@@ -2,8 +2,8 @@
 
 namespace BlueSpice\QrCode\Panel;
 
-use Endroid\QrCode\QrCode;
 use BlueSpice\Calumma\Panel\BasePanel;
+use Endroid\QrCode\QrCode;
 use Skins\Chameleon\IdRegistry;
 
 class Panel extends BasePanel {

@@ -3,8 +3,8 @@
 namespace BlueSpice\QrCode\Hook\SkinTemplateOutputPageBeforeExec;
 
 use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
-use BlueSpice\SkinData;
 use BlueSpice\QrCode\Panel\Panel;
+use BlueSpice\SkinData;
 
 class AddQrCode extends SkinTemplateOutputPageBeforeExec {
 
