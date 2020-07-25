@@ -46,8 +46,8 @@
 		"remoteExtPath": "BlueSpiceQrCode/resources"
 	},
 	"Hooks": {
-		"SkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\QrCode\\Hook\\SkinTemplateOutputPageBeforeExec\\AddQrCode::callback"
+		"ChameleonSkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\QrCode\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddQrCode::callback"
 		],
 		"BeforePageDisplay": [
 			"\\BlueSpice\\QrCode\\Hook\\BeforePageDisplay\\AddRessources::callback"
