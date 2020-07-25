@@ -1,12 +1,12 @@
 <?php
 
-namespace BlueSpice\QrCode\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\QrCode\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\QrCode\Panel\Panel;
 use BlueSpice\SkinData;
 
-class AddQrCode extends SkinTemplateOutputPageBeforeExec {
+class AddQrCode extends ChameleonSkinTemplateOutputPageBeforeExec {
 
 	protected function skipProcessing() {
 		$title = $this->skin->getTitle();
