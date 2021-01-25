@@ -2,7 +2,7 @@
 
 namespace BlueSpice\QrCode\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
+use BlueSpice\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\QrCode\Panel\Panel;
 use BlueSpice\SkinData;
 
