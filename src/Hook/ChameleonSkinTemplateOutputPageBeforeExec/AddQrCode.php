@@ -22,7 +22,7 @@ class AddQrCode extends ChameleonSkinTemplateOutputPageBeforeExec {
 			[
 				'qrcode' => [
 					'position' => 100,
-					'callback' => function ( $sktemplate ) {
+					'callback' => static function ( $sktemplate ) {
 						return new Panel( $sktemplate );
 					}
 				]
