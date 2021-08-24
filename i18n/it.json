@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Stefano"
 		]
 	},
-	"bs-qr-code-title": "Codice QR"
+	"bs-qr-code-title": "Codice QR",
+	"bs-qr-code-text": "Scansiona il codice QR per aprire questa pagina su un dispositivo mobile"
 }
