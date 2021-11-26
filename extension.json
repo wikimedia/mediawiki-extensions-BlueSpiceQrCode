@@ -39,11 +39,32 @@
 				"bluespice.qrcode.less"
 			],
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
+		},
+		"ext.qrcode.dialog": {
+			"scripts": [
+				"QrCode.js",
+				"oojs/ui/dialog/OrCodeDialog.js"
+			],
+			"messages": [
+				"bs-qr-code-action-qr-code-dialog-title",
+				"bs-qr-code-action-qr-code-dialog-alt"
+			],
+			"dependencies": [
+				"ext.bluespice.oojs"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceQrCode/resources"
+	},
+	"HookHandlers": {
+		"skin": {
+			"class": "\\BlueSpice\\QrCode\\HookHandler\\Skin"
+		},
+		"discovery-skin": {
+			"class": "\\BlueSpice\\QrCode\\HookHandler\\BlueSpiceDiscovery"
+		}
 	},
 	"Hooks": {
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
@@ -51,7 +72,16 @@
 		],
 		"BeforePageDisplay": [
 			"\\BlueSpice\\QrCode\\Hook\\BeforePageDisplay\\AddRessources::callback"
+		],
+		"SkinTemplateNavigation::Universal": [
+			"skin"
+		],
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": [
+			"discovery-skin"
 		]
+	},
+	"APIModules": {
+		"bs-qr-code": "\\BlueSpice\\QrCode\\Api\\QrCodeApi"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
