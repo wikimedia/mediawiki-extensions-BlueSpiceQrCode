@@ -4,5 +4,8 @@
 			"Ajeje Brazorf"
 		]
 	},
-	"bs-qr-code-title": "Còdici QR"
+	"bs-qr-code-title": "Còdici QR",
+	"bs-qr-code-action-qr-code-text": "Còdici QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Còdici QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Còdici QR pi $1"
 }
