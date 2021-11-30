@@ -4,5 +4,7 @@
 			"Robby"
 		]
 	},
-	"bs-qr-code-title": "QR-Code"
+	"bs-qr-code-title": "QR-Code",
+	"bs-qr-code-action-qr-code-text": "QR-Code",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-Code"
 }
