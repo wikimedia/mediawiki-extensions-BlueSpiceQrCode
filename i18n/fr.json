@@ -1,10 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Gomoko"
 		]
 	},
 	"bs-qr-code-extension-description": "Affiche un code QR avec un lien vers la page actuelle dans la barre d’outils.",
 	"bs-qr-code-title": "Code QR",
-	"bs-qr-code-text": "Scanner un code QR pour ouvrir cette page sur un appareil mobile"
+	"bs-qr-code-text": "Scanner un code QR pour ouvrir cette page sur un appareil mobile",
+	"bs-qr-code-action-qr-code-text": "Code QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Code QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Code QR pour $1",
+	"bs-qr-code-api-no-page": "Le paramètre 'page' est vide",
+	"apihelp-bs-qr-code-param-size": "Taille du code QR"
 }

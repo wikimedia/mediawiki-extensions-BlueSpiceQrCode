@@ -6,5 +6,6 @@
 	},
 	"bs-qr-code-action-qr-code-text": "QRကိုဒ်",
 	"bs-qr-code-action-qr-code-dialog-title": "QRကိုဒ်",
-	"apihelp-bs-qr-code-param-size": "QRကိုဒ်ပေႏတန်"
+	"apihelp-bs-qr-code-param-size": "QRကိုဒ်ပေႏတန်",
+	"bs-qr-code-action-qr-code-dialog-alt": "$1 တာႏ QRကိုဒ်"
 }
