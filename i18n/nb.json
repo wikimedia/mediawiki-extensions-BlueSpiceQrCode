@@ -6,5 +6,11 @@
 	},
 	"bs-qr-code-extension-description": "Viser en QR-kode med ei lenke til den nåværende siden i verktøylinjen.",
 	"bs-qr-code-title": "QR-kode",
-	"bs-qr-code-text": "Skann QR-koden for å åpne denne siden på en mobil enhet"
+	"bs-qr-code-text": "Skann QR-koden for å åpne denne siden på en mobil enhet",
+	"bs-qr-code-action-qr-code-text": "QR-kode",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-kode",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-kode for $1",
+	"bs-qr-code-api-no-page": "Paremeteren «page» er tom",
+	"apihelp-bs-qr-code-summary": "Hent QR-kode som base64-data-URI for ei side",
+	"apihelp-bs-qr-code-param-size": "Størrelsen til QR-koden"
 }
