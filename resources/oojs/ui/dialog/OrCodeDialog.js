@@ -1,4 +1,4 @@
-bs.ui.dialog.QrCodeDialog = function( config ) {
+bs.ui.dialog.QrCodeDialog = function ( config ) {
 	if ( !config.hasOwnProperty( 'callback' ) ) {
 		config.callback = {};
 	}
@@ -16,7 +16,7 @@ bs.ui.dialog.QrCodeDialog = function( config ) {
 
 	this.$element.attr( 'id', this.id );
 
-	bs.ui.dialog.SimpleMessageDialog.prototype.makeActionAccept = function() {
+	bs.ui.dialog.SimpleMessageDialog.prototype.makeActionAccept = function () {
 		var params = {
 			action: 'ok',
 			label: mw.message( 'ooui-dialog-message-accept' ).plain()
