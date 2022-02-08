@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion",
 			"Vlad5250"
 		]
 	},
 	"bs-qr-code-extension-description": "Показує на панелі інструментів QR-код з посиланням на поточну сторінку.",
 	"bs-qr-code-title": "QR-код",
-	"bs-qr-code-text": "Проскануйте QR-код, щоб відкрити цю сторінку на мобільному пристрої"
+	"bs-qr-code-text": "Проскануйте QR-код, щоб відкрити цю сторінку на мобільному пристрої",
+	"bs-qr-code-action-qr-code-text": "QR-код",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-код"
 }
