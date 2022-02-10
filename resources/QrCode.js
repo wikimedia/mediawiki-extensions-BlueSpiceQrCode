@@ -10,7 +10,7 @@
 		};
 
 		var api = new mw.Api();
-		api.get( params ).done( function( response ){
+		api.get( params ).done( function ( response ) {
 			var dialog = new bs.ui.dialog.QrCodeDialog( {
 				titleMsg: 'bs-qr-code-action-qr-code-dialog-title',
 				altMsg: 'bs-qr-code-action-qr-code-dialog-alt',
@@ -19,6 +19,6 @@
 			} );
 			windowManager.addWindows( [ dialog ] );
 			windowManager.openWindow( dialog );
-		});
+		} );
 	} );
-} )( mediaWiki, jQuery, document );
+}( mediaWiki, jQuery, document ) );
