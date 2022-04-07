@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Juan90264"
+			"Juan90264",
+			"YuriNikolai"
 		]
 	},
 	"bs-qr-code-extension-description": "Exibe um código QR com um link para a página atual na barra de ferramentas.",
@@ -12,7 +13,7 @@
 	"bs-qr-code-action-qr-code-title": "Abrir caixa de diálogo com código QR",
 	"bs-qr-code-action-qr-code-text": "Código QR",
 	"bs-qr-code-action-qr-code-dialog-title": "Código QR",
-	"bs-qr-code-action-qr-code-dialog-alt": "Código QR por US$ 1",
+	"bs-qr-code-action-qr-code-dialog-alt": "Código QR para $1",
 	"bs-qr-code-api-no-page": "Parâmetro 'page' vazio",
 	"apihelp-bs-qr-code-summary": "Obter código QR como URI de dados base64 para uma página",
 	"apihelp-bs-qr-code-param-revid": "ID de revisão da página para gerar um link permanente",
