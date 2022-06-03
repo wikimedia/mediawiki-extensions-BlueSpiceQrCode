@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"Meno25",
-			"ديفيد",
-			"FiberAhmed"
+			"أَحمد",
+			"ديفيد"
 		]
 	},
 	"bs-qr-code-extension-description": "يعرض رمز استجابة سريعة مع رابط إلى الصفحة الحالية في شريط الأدوات.",
