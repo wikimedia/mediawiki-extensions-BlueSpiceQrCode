@@ -7,7 +7,7 @@
 		"installer-name": "BlueSpiceQrCode"
 	},
 	"require": {
-		"composer/installers": "~1.0",
+		"composer/installers": "~1.0|~2",
 		"endroid/qr-code": "2.*"
 	},
 	"require-dev": {
