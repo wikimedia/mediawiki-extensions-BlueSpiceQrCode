@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Erelon"
+			"Erelon",
+			"Amire80"
 		]
 	},
-	"bs-qr-code-title": "קוד QR"
+	"bs-qr-code-extension-description": "הצגת קוד QR עם קישור לעמוד הנוכחי בסרגל הכלים.",
+	"bs-qr-code-title": "קוד QR",
+	"bs-qr-code-text": "סריקת קוד QR לפתיחת הדף הזה במכשיר נייד"
 }
