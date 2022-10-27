@@ -12,5 +12,8 @@
 	"bs-qr-code-text": "Scansiona il codice QR per aprire questa pagina su un dispositivo mobile",
 	"bs-qr-code-action-qr-code-text": "Codice QR",
 	"bs-qr-code-action-qr-code-dialog-title": "Codice QR",
-	"bs-qr-code-action-qr-code-dialog-alt": "Codice QR per $1"
+	"bs-qr-code-action-qr-code-dialog-alt": "Codice QR per $1",
+	"bs-qr-code-api-no-page": "Parametro 'pagina' vuoto",
+	"apihelp-bs-qr-code-param-size": "Dimensione del codice QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Chiamata API predefinita"
 }
