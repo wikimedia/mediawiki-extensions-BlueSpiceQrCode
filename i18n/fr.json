@@ -15,7 +15,7 @@
 	"bs-qr-code-action-qr-code-dialog-alt": "Code QR pour $1",
 	"bs-qr-code-api-no-page": "Le paramètre « page » est vide",
 	"apihelp-bs-qr-code-summary": "Obtenir le code QR pour une page sous forme d’URI de données codées en base64",
-	"apihelp-bs-qr-code-param-revid": "Id de révision de la page pour générer un lien permanent",
+	"apihelp-bs-qr-code-param-revid": "Identifiant de révision de la page pour générer un lien permanent",
 	"apihelp-bs-qr-code-param-page": "Nom de page de la page pour générer l’URI de données codées en base64",
 	"apihelp-bs-qr-code-param-size": "Taille du code QR",
 	"apihelp-bs-qr-code-example-bs-qr-code": "Appel API par défaut",
