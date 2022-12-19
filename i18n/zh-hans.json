@@ -3,6 +3,7 @@
 		"authors": [
 			"500000000006城",
 			"A Chinese Wikipedian",
+			"LittlePaw365",
 			"佛壁灯",
 			"沈澄心"
 		]
@@ -14,5 +15,6 @@
 	"bs-qr-code-action-qr-code-dialog-title": "二维码",
 	"apihelp-bs-qr-code-param-size": "二维码尺寸",
 	"bs-qr-code-action-qr-code-title": "打开二维码对话框",
-	"bs-qr-code-action-qr-code-dialog-alt": "$1的二维码"
+	"bs-qr-code-action-qr-code-dialog-alt": "$1的二维码",
+	"apihelp-bs-qr-code-example-bs-qr-code": "默认API调用"
 }
