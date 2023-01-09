@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-qr-code-extension-description": "V orodni vrstici prikaže kodo QR s povezavo do trenutne strani.",
+	"bs-qr-code-title": "Koda QR",
+	"bs-qr-code-text": "Preskenirajte kodo QR, da odprete to stran na mobilni napravi",
+	"bs-qr-code-action-qr-code-title": "Odpri pogovorno okno s kodo QR",
+	"bs-qr-code-action-qr-code-text": "Koda QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Koda QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Koda QR za $1",
+	"bs-qr-code-api-no-page": "Parameter »page« je prazen",
+	"apihelp-bs-qr-code-summary": "Pridobite kodo QR kod URI podatkov, kodiranih v base64",
+	"apihelp-bs-qr-code-param-revid": "ID redakcije strani za ustvaritev trajne povezave",
+	"apihelp-bs-qr-code-param-page": "Ime strani za ustvaritev URI-ja podatkov, kodiranih v base64",
+	"apihelp-bs-qr-code-param-size": "Velikost kode QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Privzeti API-klic",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "API-klic za določen revid",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API-klic z velikostjo po meri"
+}
