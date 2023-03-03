@@ -6,7 +6,7 @@
 		"Josef Konrad"
 	],
 	"descriptionmsg": "bs-qr-code-extension-description",
-	"url": "https://en.wiki.bluespice.com/wiki/Reference:QrCode",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceQrCode",
 	"type": "bluespice",
 	"requires": {
 		"MediaWiki": ">= 1.35.0",
