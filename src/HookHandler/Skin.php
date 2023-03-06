@@ -24,7 +24,7 @@ class Skin implements SkinTemplateNavigation__UniversalHook {
 			return;
 		}
 
-		if ( $sktemplate->skinname === 'bluespicecalumma' ) {
+		if ( $sktemplate->getSkinName() === 'bluespicecalumma' ) {
 			// BlueSpiceCalumma has its own integration see:
 			// BlueSpice\QrCode\Hook\ChameleonSkinTemplateOutputPageBeforeExec\\AddQrCode
 			return;
