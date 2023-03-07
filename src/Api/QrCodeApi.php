@@ -42,7 +42,7 @@ class QrCodeApi extends ApiBase {
 
 		$page = trim(
 			$this->getParameter( 'page' ),
-			'\'\"\x20'
+			"'\"\x20"
 		);
 
 		if ( !empty( $page ) ) {
