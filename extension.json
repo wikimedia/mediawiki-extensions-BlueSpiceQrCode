@@ -34,12 +34,6 @@
 		"BlueSpice\\QrCode\\": "src/"
 	},
 	"ResourceModules": {
-		"ext.qrcode.styles": {
-			"styles": [
-				"bluespice.qrcode.less"
-			],
-			"class": "\\BlueSpice\\ResourceModule\\LessVars"
-		},
 		"ext.qrcode.dialog": {
 			"scripts": [
 				"QrCode.js",
@@ -67,9 +61,6 @@
 		}
 	},
 	"Hooks": {
-		"ChameleonSkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\QrCode\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddQrCode::callback"
-		],
 		"BeforePageDisplay": [
 			"\\BlueSpice\\QrCode\\Hook\\BeforePageDisplay\\AddRessources::callback"
 		],
