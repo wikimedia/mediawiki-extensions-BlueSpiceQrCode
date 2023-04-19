@@ -13,7 +13,7 @@
 	"bs-qr-code-action-qr-code-dialog-alt": "QR-kode for $1",
 	"bs-qr-code-api-no-page": "Paremeteren «page» er tom",
 	"apihelp-bs-qr-code-summary": "Hent QR-kode som base64-data-URI for ei side",
-	"apihelp-bs-qr-code-param-revid": "Revisjons-ID for siden for å generere en permanent lenke",
+	"apihelp-bs-qr-code-param-revid": "Sideversjons-ID for siden for å generere en permanent lenke",
 	"apihelp-bs-qr-code-param-page": "Sidenavnet til siden for å generere base64-data-URI",
 	"apihelp-bs-qr-code-param-size": "Størrelsen til QR-koden",
 	"apihelp-bs-qr-code-example-bs-qr-code": "Standard API-kall",
