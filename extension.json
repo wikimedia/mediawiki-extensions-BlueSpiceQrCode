@@ -22,6 +22,24 @@
 					"extPath": "/BlueSpiceQrCode",
 					"package": "BlueSpice Pro"
 				}
+			},
+			"TagRegistry": {
+				"qrcode": "\\BlueSpice\\QrCode\\Tag\\QrCode"
+			},
+			"DynamicFileRegistry": {
+				"qrcode": "\\BlueSpice\\QrCode\\DynamicFileDispatcher\\QrCode"
+			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"TagDefinitions": [
+				"ext.bluespice.qrCode.visualEditor"
+			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"qr-code": {
+					"class": "\\BlueSpice\\QrCode\\ContentDroplet\\QrCodeDroplet"
+				}
 			}
 		}
 	},
@@ -46,6 +64,32 @@
 			"dependencies": [
 				"ext.bluespice.oojs"
 			]
+		},
+		"ext.bluespice.qrCode.visualEditor": {
+			"scripts": [
+				"util/tag/QrCodeDefinition.js"
+			],
+			"styles": [
+				"stylesheets/ext.bluespice.qrcode.droplet.css"
+			],
+			"messages": [
+				"bs-qr-code-tag-qrcode-desc",
+				"bs-qr-code-tag-qrcode-title",
+				"bs-qr-code-tag-attr-page-label",
+				"bs-qr-code-tag-attr-page-help",
+				"bs-qr-code-tag-attr-query-label",
+				"bs-qr-code-tag-attr-query-help",
+				"bs-qr-code-tag-attr-desc-label",
+				"bs-qr-code-tag-attr-desc-help",
+				"bs-qr-code-tag-attr-size-label",
+				"bs-qr-code-tag-attr-size-help",
+				"bs-qr-code-tag-attr-size-option-small",
+				"bs-qr-code-tag-attr-size-option-medium",
+				"bs-qr-code-tag-attr-size-option-large"
+			],
+			"dependencies": [
+				"ext.bluespice.visualEditorConnector.tags.classes"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -69,7 +113,8 @@
 		],
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": [
 			"discovery-skin"
-		]
+		],
+		"SetupAfterCache": "\\BlueSpice\\QrCode\\Hook\\SetupAfterCache\\AddFileRepo::callback"
 	},
 	"APIModules": {
 		"bs-qr-code": "\\BlueSpice\\QrCode\\Api\\QrCodeApi"
