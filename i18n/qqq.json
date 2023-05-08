@@ -18,5 +18,21 @@
 	"apihelp-bs-qr-code-param-size": "Description of api param 'size'",
 	"apihelp-bs-qr-code-example-bs-qr-code": "Message for example of API call",
 	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Message for example of API call with param 'revid'",
-	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Message for example of API call with param 'size'"
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Message for example of API call with param 'size'",
+	"bs-qr-code-alt-text": "Alt text for image with qr code\n Parameter:\n* $1: page title",
+	"bs-qr-code-tag-qrcode-desc": "Text for qr code inspector",
+	"bs-qr-code-tag-qrcode-title": "Title for qr code inspector",
+	"bs-qr-code-tag-attr-page-label": "Label for text input widget to specify page name",
+	"bs-qr-code-tag-attr-page-help": "Help text for text input widget to specify page name",
+	"bs-qr-code-tag-attr-query-label": "Label for text input widget to add additional params",
+	"bs-qr-code-tag-attr-query-help": "Help text for text input widget to add additional params",
+	"bs-qr-code-tag-attr-desc-label": "Label for text input widget to add a description to QR code",
+	"bs-qr-code-tag-attr-desc-help": "Help text for text input widget to add a description",
+	"bs-qr-code-tag-attr-size-label": "Label for dropdown widget to set size of rendered QR coe",
+	"bs-qr-code-tag-attr-size-help": "Help text for dropdown widget to set size of rendered QR code",
+	"bs-qr-code-droplet-name": "Text for name of droplet QR code",
+	"bs-qr-code-droplet-desc": "Description text for droplet QR code",
+	"bs-qr-code-tag-attr-size-option-small": "Label for option small in dropdown widget",
+	"bs-qr-code-tag-attr-size-option-medium": "Label for option medium in dropdown widget",
+	"bs-qr-code-tag-attr-size-option-large": "Label for option large in dropdown widget"
 }

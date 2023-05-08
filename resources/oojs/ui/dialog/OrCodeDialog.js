@@ -1,4 +1,5 @@
 bs.ui.dialog.QrCodeDialog = function ( config ) {
+	// eslint-disable-next-line no-prototype-builtins
 	if ( !config.hasOwnProperty( 'callback' ) ) {
 		config.callback = {};
 	}
@@ -10,6 +11,7 @@ bs.ui.dialog.QrCodeDialog = function ( config ) {
 	var altMsg = config.altMsg;
 	var page = config.page || '';
 	if ( altMsg !== '' ) {
+		// eslint-disable-next-line mediawiki/msg-doc
 		var alt = mw.message( altMsg, page ).text();
 		this.alt = ' alt="' + alt + '"';
 	}
@@ -21,6 +23,7 @@ bs.ui.dialog.QrCodeDialog = function ( config ) {
 			action: 'ok',
 			label: mw.message( 'ooui-dialog-message-accept' ).plain()
 		};
+		// eslint-disable-next-line no-prototype-builtins
 		if ( this.hasOwnProperty( 'id' ) ) {
 			params.id = this.id + '-btn-ok';
 		}
