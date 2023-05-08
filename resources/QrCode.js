@@ -1,4 +1,4 @@
-( function ( mw, $, d, undefined ) {
+( function ( mw, $, d ) {
 	$( d ).on( 'click', '#ca-bs-qr-code', function ( e ) {
 		e.preventDefault();
 
