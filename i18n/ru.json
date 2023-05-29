@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"Vlad5250"
 		]
 	},
-	"bs-qr-code-title": "QR-код"
+	"bs-qr-code-title": "QR-код",
+	"bs-qr-code-tag-attr-page-label": "Страница",
+	"bs-qr-code-tag-attr-desc-label": "Описание",
+	"bs-qr-code-tag-attr-desc-help": "Описание, связанное с QR-кодом. Чтобы отображался только QR-код, оставьте это поле пустым"
 }
