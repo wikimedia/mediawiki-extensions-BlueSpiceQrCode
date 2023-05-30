@@ -102,6 +102,10 @@
 		},
 		"discovery-skin": {
 			"class": "\\BlueSpice\\QrCode\\HookHandler\\BlueSpiceDiscovery"
+		},
+		"export": {
+			"class": "\\BlueSpice\\QrCode\\Hook\\BSUEModulePDFFindFiles\\AddQrCode",
+			"services": [ "UrlUtils" ]
 		}
 	},
 	"Hooks": {
@@ -114,7 +118,10 @@
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": [
 			"discovery-skin"
 		],
-		"SetupAfterCache": "\\BlueSpice\\QrCode\\Hook\\SetupAfterCache\\AddFileRepo::callback"
+		"SetupAfterCache": "\\BlueSpice\\QrCode\\Hook\\SetupAfterCache\\AddFileRepo::callback",
+		"BSUEModulePDFFindFiles": [
+			"export"
+		]
 	},
 	"APIModules": {
 		"bs-qr-code": "\\BlueSpice\\QrCode\\Api\\QrCodeApi"
