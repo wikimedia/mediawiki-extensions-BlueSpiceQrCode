@@ -19,7 +19,7 @@ bs.qrcode.util.tag.QrCodeDefinition.prototype.getCfg = function () {
 			name: 'page',
 			labelMsg: 'bs-qr-code-tag-attr-page-label',
 			helpMsg: 'bs-qr-code-tag-attr-page-help',
-			type: 'text'
+			type: 'title'
 		}, {
 			name: 'query',
 			labelMsg: 'bs-qr-code-tag-attr-query-label',
