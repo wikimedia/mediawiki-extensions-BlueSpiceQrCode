@@ -7,6 +7,8 @@
 	},
 	"bs-qr-code-title": "QR-код",
 	"bs-qr-code-tag-attr-page-label": "Страница",
+	"bs-qr-code-tag-attr-query-label": "Параметр",
 	"bs-qr-code-tag-attr-desc-label": "Описание",
-	"bs-qr-code-tag-attr-desc-help": "Описание, связанное с QR-кодом. Чтобы отображался только QR-код, оставьте это поле пустым"
+	"bs-qr-code-tag-attr-desc-help": "Описание, связанное с QR-кодом. Чтобы отображался только QR-код, оставьте это поле пустым",
+	"bs-qr-code-tag-attr-size-label": "Размер"
 }
