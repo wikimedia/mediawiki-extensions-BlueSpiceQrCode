@@ -33,5 +33,6 @@
 	"bs-qr-code-droplet-desc": "Setter inn en QR-kode på wikisiden",
 	"bs-qr-code-tag-attr-size-option-small": "liten",
 	"bs-qr-code-tag-attr-size-option-medium": "medium",
-	"bs-qr-code-tag-attr-size-option-large": "stor"
+	"bs-qr-code-tag-attr-size-option-large": "stor",
+	"bs-qr-code-tag-attr-desc-help": "En beskrivelse som er knyttet til QR-koden. La dette feltet være tomt for å vise kun QR-koden"
 }
