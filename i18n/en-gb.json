@@ -4,6 +4,5 @@
 			"Piano1forte2"
 		]
 	},
-	"bs-qr-code-action-qr-code-title": "Open dialogue with QR code",
-	"bs-qr-code-tag-attr-query-help": "Additional parameters to be added to the QR code URL. This includes parameters like 'action=edit' or 'oldid=1'"
+	"bs-qr-code-action-qr-code-title": "Open dialogue with QR code"
 }
