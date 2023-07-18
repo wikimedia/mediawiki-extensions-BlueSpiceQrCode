@@ -27,6 +27,7 @@
 	"bs-qr-code-tag-attr-query-label": "Parameter",
 	"bs-qr-code-tag-attr-query-help": "Ekstra parametre som skal legges til QR-kode-URL-en. Dette inkluderer parametre som «action=edit» eller «oldid=1»",
 	"bs-qr-code-tag-attr-desc-label": "Beskrivelse",
+	"bs-qr-code-tag-attr-desc-help": "En beskrivelse som er knyttet til QR-koden. La dette feltet være tomt for å vise kun QR-koden",
 	"bs-qr-code-tag-attr-size-label": "Størrelse",
 	"bs-qr-code-tag-attr-size-help": "Endre størrelsen til den innbygde QR-koden",
 	"bs-qr-code-droplet-name": "QR-kode",
