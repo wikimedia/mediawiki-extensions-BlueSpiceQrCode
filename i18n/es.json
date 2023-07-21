@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"AnupamM",
 			"DiegoAmbrocio",
 			"Fitoschido"
 		]
@@ -23,5 +24,6 @@
 	"bs-qr-code-droplet-name": "Código QR",
 	"bs-qr-code-tag-attr-size-option-small": "pequeño",
 	"bs-qr-code-tag-attr-size-option-medium": "mediano",
-	"bs-qr-code-tag-attr-size-option-large": "grande"
+	"bs-qr-code-tag-attr-size-option-large": "grande",
+	"bs-qr-code-tag-attr-desc-label": "Descripción"
 }
