@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Elroy",
+			"HanV",
 			"McDutchie",
 			"Nickthijssen1994",
 			"Romaine"
@@ -21,5 +22,17 @@
 	"apihelp-bs-qr-code-param-page": "Paginanaam van de pagina om base64-gegevens-URI te genereren",
 	"apihelp-bs-qr-code-example-bs-qr-code": "Standaard API-aanroep",
 	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "API-aanroep voor een bepaalde revid",
-	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API-aanroep met eigen grootte"
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API-aanroep met eigen grootte",
+	"bs-qr-code-alt-text": "QR-code voor $1",
+	"bs-qr-code-tag-qrcode-desc": "Sluit een gekoppelde QR-code in op de wikipagina",
+	"bs-qr-code-tag-qrcode-title": "QR-code",
+	"bs-qr-code-tag-attr-page-label": "Pagina",
+	"bs-qr-code-tag-attr-query-label": "Parameter",
+	"bs-qr-code-tag-attr-desc-label": "Beschrijving",
+	"bs-qr-code-tag-attr-size-label": "Grootte",
+	"bs-qr-code-droplet-name": "QR-code",
+	"bs-qr-code-droplet-desc": "Voegt een QR-code in op een wikipagina",
+	"bs-qr-code-tag-attr-size-option-small": "klein",
+	"bs-qr-code-tag-attr-size-option-medium": "medium",
+	"bs-qr-code-tag-attr-size-option-large": "groot"
 }
