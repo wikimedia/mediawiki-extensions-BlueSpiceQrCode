@@ -34,5 +34,8 @@
 	"bs-qr-code-droplet-desc": "Voegt een QR-code in op een wikipagina",
 	"bs-qr-code-tag-attr-size-option-small": "klein",
 	"bs-qr-code-tag-attr-size-option-medium": "medium",
-	"bs-qr-code-tag-attr-size-option-large": "groot"
+	"bs-qr-code-tag-attr-size-option-large": "groot",
+	"bs-qr-code-tag-attr-page-help": "Paginanaam die moet worden opgenomen in de QR-codelink. Laat dit veld leeg om de huidige paginanaam te gebruiken",
+	"bs-qr-code-tag-attr-query-help": "Aanvullende parameters om toe te voegen aan de URL van de QR-code. Dit omvat parameters zoals \"action=edit\" of \"oldid=1\"",
+	"bs-qr-code-tag-attr-desc-help": "Een aan de QR-code gerelateerde beschrijving. Laat dit veld leeg om alleen de QR-code weer te geven"
 }
