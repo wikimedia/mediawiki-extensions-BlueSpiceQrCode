@@ -33,6 +33,7 @@
 	"bs-qr-code-tag-attr-desc-label": "Beschrijving",
 	"bs-qr-code-tag-attr-desc-help": "Een aan de QR-code gerelateerde beschrijving. Laat dit veld leeg om alleen de QR-code weer te geven",
 	"bs-qr-code-tag-attr-size-label": "Grootte",
+	"bs-qr-code-tag-attr-size-help": "De grootte van de ingesloten QR-code wijzigen",
 	"bs-qr-code-droplet-name": "QR-code",
 	"bs-qr-code-droplet-desc": "Voegt een QR-code in op een wikipagina",
 	"bs-qr-code-tag-attr-size-option-small": "klein",
