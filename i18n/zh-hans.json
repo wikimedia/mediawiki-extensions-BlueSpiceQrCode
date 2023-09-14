@@ -5,7 +5,8 @@
 			"A Chinese Wikipedian",
 			"LittlePaw365",
 			"佛壁灯",
-			"沈澄心"
+			"沈澄心",
+			"Vikarna"
 		]
 	},
 	"bs-qr-code-extension-description": "在工具栏中显示链接至当前页面的二维码。",
@@ -15,6 +16,12 @@
 	"bs-qr-code-action-qr-code-text": "二维码",
 	"bs-qr-code-action-qr-code-dialog-title": "二维码",
 	"bs-qr-code-action-qr-code-dialog-alt": "$1的二维码",
+	"bs-qr-code-api-no-page": "参数“page”为空",
+	"apihelp-bs-qr-code-summary": "获取二维码作为页面的base64数据URI",
+	"apihelp-bs-qr-code-param-revid": "用于生成永久链接的页面修订ID",
+	"apihelp-bs-qr-code-param-page": "生成base64数据URI的页面之页面名称",
 	"apihelp-bs-qr-code-param-size": "二维码尺寸",
-	"apihelp-bs-qr-code-example-bs-qr-code": "默认API调用"
+	"apihelp-bs-qr-code-example-bs-qr-code": "默认API调用",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "某revid的API调用",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "自定义尺寸（size）的API调用"
 }
