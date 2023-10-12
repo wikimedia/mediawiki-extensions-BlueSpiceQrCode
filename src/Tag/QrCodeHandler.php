@@ -57,6 +57,9 @@ class QrCodeHandler extends Handler {
 		if ( !$title ) {
 			$title = $this->context->getTitle();
 		}
+		if ( !$title ) {
+			return '';
+		}
 
 		$altText = $this->context->msg( 'bs-qr-code-alt-text', $title->getText() );
 
