@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BadDog",
+			"Kizule",
 			"Milicevic01"
 		]
 	},
@@ -15,5 +16,13 @@
 	"bs-qr-code-droplet-desc": "Уметни QR код у вики страницу",
 	"bs-qr-code-tag-attr-size-option-small": "мала",
 	"bs-qr-code-tag-attr-size-option-medium": "средња",
-	"bs-qr-code-tag-attr-size-option-large": "велика"
+	"bs-qr-code-tag-attr-size-option-large": "велика",
+	"bs-qr-code-action-qr-code-text": "QR код",
+	"bs-qr-code-action-qr-code-dialog-title": "QR код",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR код за $1",
+	"bs-qr-code-api-no-page": "Параметар 'page' је празан",
+	"apihelp-bs-qr-code-param-size": "Величина QR кода",
+	"bs-qr-code-alt-text": "QR код за $1",
+	"bs-qr-code-tag-attr-query-label": "Параметар",
+	"bs-qr-code-droplet-name": "QR код"
 }
