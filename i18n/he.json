@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Erelon",
-			"Amire80"
+			"Amire80",
+			"Erelon"
 		]
 	},
 	"bs-qr-code-extension-description": "הצגת קוד QR עם קישור לדף הנוכחי בסרגל הכלים.",
@@ -19,5 +19,21 @@
 	"apihelp-bs-qr-code-param-size": "גודל קוד ה־QR",
 	"apihelp-bs-qr-code-example-bs-qr-code": "קריאת ברירת מחדל ל־API",
 	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "קריאת API עבור מזהה גרסה מסוים",
-	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "קריאת API עם גודל מותאם אישית"
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "קריאת API עם גודל מותאם אישית",
+	"bs-qr-code-alt-text": "קוד QR עבור $1",
+	"bs-qr-code-tag-qrcode-desc": "הטבעת קוד QR מקושר בדף ויקי",
+	"bs-qr-code-tag-qrcode-title": "קוד QR",
+	"bs-qr-code-tag-attr-page-label": "דף",
+	"bs-qr-code-tag-attr-page-help": "שם הדף שייכלל בקישור קוד QR. כדי להשתמש בשם הדף הנוכחי, יש להשאיר את השדה הזה ריק",
+	"bs-qr-code-tag-attr-query-label": "פרמטר",
+	"bs-qr-code-tag-attr-query-help": "עוד פרמטרים שיתווספו ל־URL של קוד QR. זה כולל פרמטרים כמו \"action=edit\" או \"oldid=1\"",
+	"bs-qr-code-tag-attr-desc-label": "תיאור",
+	"bs-qr-code-tag-attr-desc-help": "תיאור שקשור לקוד QR. כדי להציג רק קוד QR, יש להשאיר את השדה הזה ריק",
+	"bs-qr-code-tag-attr-size-label": "גודל",
+	"bs-qr-code-tag-attr-size-help": "שינוי הגודל של קוד QR מוטבע",
+	"bs-qr-code-droplet-name": "קוד QR",
+	"bs-qr-code-droplet-desc": "הכנסת קוד QR לדף ויקי",
+	"bs-qr-code-tag-attr-size-option-small": "קטן",
+	"bs-qr-code-tag-attr-size-option-medium": "בינוני",
+	"bs-qr-code-tag-attr-size-option-large": "גדול"
 }
