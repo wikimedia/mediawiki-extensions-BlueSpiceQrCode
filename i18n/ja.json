@@ -3,7 +3,8 @@
 		"authors": [
 			"Kokage si",
 			"MathXplore",
-			"Shirayuki"
+			"Shirayuki",
+			"もなー(偽物)"
 		]
 	},
 	"bs-qr-code-extension-description": "現在のページへのリンクを含む QR コードをツールバーに表示する。",
@@ -22,5 +23,6 @@
 	"bs-qr-code-droplet-desc": "ウィキページにQRコードを挿入します",
 	"bs-qr-code-tag-attr-size-option-small": "小",
 	"bs-qr-code-tag-attr-size-option-medium": "中",
-	"bs-qr-code-tag-attr-size-option-large": "大"
+	"bs-qr-code-tag-attr-size-option-large": "大",
+	"apihelp-bs-qr-code-param-revid": "パーマリンクを生成するページの版のID"
 }
