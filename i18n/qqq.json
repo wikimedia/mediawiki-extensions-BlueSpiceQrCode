@@ -6,8 +6,6 @@
 		]
 	},
 	"bs-qr-code-extension-description": "Describes the BlueSpiceQrCode extension.",
-	"bs-qr-code-title": "Title of the QrCode toolbox panel",
-	"bs-qr-code-text": "Text that says user can scan the qr code for viewing this article on a mobile device.",
 	"bs-qr-code-action-qr-code-title": "Title for link to open a dialog showing qr code",
 	"bs-qr-code-action-qr-code-text": "Text for link to open a dialog showing qr code",
 	"bs-qr-code-action-qr-code-dialog-title": "Title for dialog showing qr code",
