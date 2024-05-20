@@ -9,6 +9,7 @@
 	"bs-qr-code-action-qr-code-text": "QR-код",
 	"bs-qr-code-action-qr-code-dialog-title": "QR-код",
 	"bs-qr-code-action-qr-code-dialog-alt": "QR-код для $1",
+	"apihelp-bs-qr-code-param-size": "Размер QR-кода",
 	"bs-qr-code-alt-text": "QR-код для $1",
 	"bs-qr-code-tag-qrcode-title": "QR-код",
 	"bs-qr-code-tag-attr-page-label": "Страница",
