@@ -20,5 +20,6 @@
 	"bs-qr-code-alt-text": "QR-код для $1",
 	"bs-qr-code-tag-attr-size-option-small": "маленький",
 	"bs-qr-code-tag-attr-size-option-medium": "средний",
-	"bs-qr-code-tag-attr-size-option-large": "большой"
+	"bs-qr-code-tag-attr-size-option-large": "большой",
+	"apihelp-bs-qr-code-param-size": "Размер QR-кода"
 }
