@@ -11,6 +11,7 @@
 	"bs-qr-code-tag-qrcode-title": "QR-Code",
 	"bs-qr-code-tag-attr-page-label": "Säit",
 	"bs-qr-code-tag-attr-query-label": "Parameter",
+	"bs-qr-code-tag-attr-desc-label": "Beschreiwung",
 	"bs-qr-code-tag-attr-size-label": "Gréisst",
 	"bs-qr-code-droplet-name": "QR-Code",
 	"bs-qr-code-tag-attr-size-option-small": "kleng",
