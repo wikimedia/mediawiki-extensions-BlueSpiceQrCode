@@ -25,9 +25,6 @@
 			},
 			"TagRegistry": {
 				"qrcode": "\\BlueSpice\\QrCode\\Tag\\QrCode"
-			},
-			"DynamicFileRegistry": {
-				"qrcode": "\\BlueSpice\\QrCode\\DynamicFileDispatcher\\QrCode"
 			}
 		},
 		"BlueSpiceVisualEditorConnector": {
