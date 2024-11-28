@@ -2,55 +2,70 @@
 
 namespace BlueSpice\QrCode\DynamicFileDispatcher;
 
-use BlueSpice\DynamicFileDispatcher\File;
 use BsFileSystemHelper;
 use Endroid\QrCode\QrCode;
-use MediaWiki\MediaWikiServices;
-use MWException;
-use WebResponse;
+use Exception;
+use File;
+use MediaWiki\Rest\Stream;
+use MediaWiki\Title\TitleFactory;
+use Message;
+use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFile;
+use Psr\Http\Message\StreamInterface;
 
-class QrCodeImage extends File {
+class QrCodeImage Implements IDynamicFile {
+
+	/** @var TitleFactory */
+	private $titleFactory;
+
+	/** @var string */
+	private $pagename;
+
+	/** @var string */
+	private $query;
+
+	/** @var int */
+	private $size;
 
 	/**
-	 * Sets the headers for given \WebResponse
-	 * @param WebResponse $response
-	 * @return void
+	 * @param TitleFactory $titleFactory
+	 * @param string $pagename
+	 * @param string $query
+	 * @param int $size
 	 */
-	public function setHeaders( WebResponse $response ) {
-		$response->header(
-			'Content-type: ' . $this->getMimeType(),
-			true
-		);
-
-		readfile( $this->getSourcePath() );
+	public function __construct( TitleFactory $titleFactory, string $pagename, string $query, int $size ) {
+		$this->titleFactory = $titleFactory;
+		$this->pagename = $pagename;
+		$this->query = $query;
+		$this->size = $size;
 	}
 
 	/**
-	 *
-	 * @return string
+	 * @inheritDoc
 	 */
-	private function getSourcePath() {
+	public function getMimeType(): string {
+		return 'image/png';
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getStream(): StreamInterface {
 		$sourcePath = 'images/bluespice/QrCode/';
-		$params = $this->dfd->getParams();
-		$pagename = $params['pagename'];
-		$query = $params['query'];
-		$size = $params['size'];
-		$id = md5( $pagename . $query );
+		$id = md5( $this->pagename . $this->query . $this->size );
 		$filename = $id . ".png";
 		$file = BsFileSystemHelper::getFileFromRepoName(
 			$filename,
 			'QrCode'
 		);
 
-		if ( $file instanceof File ) {
-			return $sourcePath . $filename;
+		if ( $file instanceof File && $file->exists() ) {
+			return new Stream( fopen( $sourcePath . $filename, 'rb' ) );
 		}
-		$titleFactory = MediaWikiServices::getInstance()->getTitleFactory();
-		$title = $titleFactory->newFromText( $pagename );
-		$url = $title->getFullURL( $query );
+		$title = $this->titleFactory->newFromText( $this->pagename );
+		$url = $title->getFullURL( $this->query );
 
 		$qrCode = new QrCode( $url );
-		$qrCode->setSize( $size );
+		$qrCode->setSize( $this->size );
 		$qrCodeSrc = $qrCode->writeString();
 
 		$status = BsFileSystemHelper::saveToDataDirectory(
@@ -58,25 +73,21 @@ class QrCodeImage extends File {
 			$qrCodeSrc,
 			'QrCode'
 		);
-		if ( !$status->isGood() ) {
-			throw new MWException(
-				'FATAL: QrCode could not be saved! ' . $status->getMessage()
-			);
-		}
-
 		$file = BsFileSystemHelper::getFileFromRepoName(
 			$filename,
 			'QrCode'
 		);
-		return $sourcePath . $filename;
-	}
+		if ( !$status->isGood() || !$file ) {
+			$messages = $status->getMessages( null );
+			$errorMessage = [];
+			foreach ( $messages as $message ) {
+				$errorMessage[] = Message::newFromSpecifier( $message )->text();
+			}
+			throw new Exception(
+				'FATAL: QrCode could not be saved! ' . implode( ', ', $errorMessage )
+			);
+		}
 
-	/**
-	 *
-	 * @return string
-	 */
-	public function getMimeType() {
-		return 'image/png';
+		return new Stream( fopen( $sourcePath . $filename, 'rb' ) );
 	}
-
 }
