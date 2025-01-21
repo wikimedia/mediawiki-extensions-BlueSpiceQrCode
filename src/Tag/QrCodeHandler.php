@@ -6,10 +6,10 @@ use BlueSpice\QrCode\Tag\QrCode as TagQrCode;
 use BlueSpice\Tag\Handler;
 use Html;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\DynamicFileDispatcherFactory;
 use Parser;
 use PPFrame;
-use TitleFactory;
 
 class QrCodeHandler extends Handler {
 
