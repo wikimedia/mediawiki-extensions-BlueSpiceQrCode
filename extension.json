@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceQrCode",
-	"version": "4.2.0-alpha",
+	"version": "5.0.0",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Josef Konrad"
@@ -9,9 +9,9 @@
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceQrCode",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.39.0",
+		"MediaWiki": ">= 1.43.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.3"
+			"BlueSpiceFoundation": ">= 5.0.0"
 		}
 	},
 	"attributes": {
