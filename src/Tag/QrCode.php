@@ -7,11 +7,11 @@ use BlueSpice\ParamProcessor\ParamType;
 use BlueSpice\Tag\GenericHandler;
 use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\Tag\Tag;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\DynamicFileDispatcherFactory;
 use Parser;
 use PPFrame;
-use RequestContext;
 
 class QrCode extends Tag {
 
