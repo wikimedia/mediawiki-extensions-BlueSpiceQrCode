@@ -6,9 +6,9 @@ use BsFileSystemHelper;
 use Endroid\QrCode\QrCode;
 use Exception;
 use File;
+use MediaWiki\Message\Message;
 use MediaWiki\Rest\Stream;
 use MediaWiki\Title\TitleFactory;
-use Message;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFile;
 use Psr\Http\Message\StreamInterface;
 
