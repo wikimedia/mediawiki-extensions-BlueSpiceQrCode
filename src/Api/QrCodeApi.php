@@ -2,8 +2,8 @@
 
 namespace BlueSpice\QrCode\Api;
 
-use ApiBase;
 use Endroid\QrCode\QrCode;
+use MediaWiki\Api\ApiBase;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use Wikimedia\ParamValidator\ParamValidator;
