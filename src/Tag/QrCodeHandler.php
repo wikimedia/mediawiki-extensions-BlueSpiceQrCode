@@ -4,8 +4,8 @@ namespace BlueSpice\QrCode\Tag;
 
 use BlueSpice\QrCode\Tag\QrCode as TagQrCode;
 use BlueSpice\Tag\Handler;
-use Html;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Html\Html;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\DynamicFileDispatcherFactory;
 use Parser;
