@@ -4,8 +4,8 @@ namespace BlueSpice\QrCode\Api;
 
 use ApiBase;
 use Endroid\QrCode\QrCode;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
-use Status;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class QrCodeApi extends ApiBase {
