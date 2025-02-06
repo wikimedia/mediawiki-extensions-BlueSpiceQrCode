@@ -8,11 +8,12 @@ use Exception;
 use File;
 use MediaWiki\Message\Message;
 use MediaWiki\Rest\Stream;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFile;
 use Psr\Http\Message\StreamInterface;
 
-class QrCodeImage Implements IDynamicFile {
+class QrCodeImage implements IDynamicFile {
 
 	/** @var TitleFactory */
 	private $titleFactory;
@@ -50,7 +51,24 @@ class QrCodeImage Implements IDynamicFile {
 	 * @inheritDoc
 	 */
 	public function getStream(): StreamInterface {
-		$sourcePath = 'images/bluespice/QrCode/';
+		[ $status, $file ] = $this->generate();
+		if ( !$status->isGood() || !$file ) {
+			$messages = $status->getMessages( null );
+			$errorMessage = [];
+			foreach ( $messages as $message ) {
+				$errorMessage[] = Message::newFromSpecifier( $message )->text();
+			}
+			throw new Exception(
+				'FATAL: QrCode could not be saved! ' . implode( ', ', $errorMessage )
+			);
+		}
+		return new Stream( fopen( $file->getLocalRefPath(), 'rb' ) );
+	}
+
+	/**
+	 * @return array
+	 */
+	public function generate(): array {
 		$id = md5( $this->pagename . $this->query . $this->size );
 		$filename = $id . ".png";
 		$file = BsFileSystemHelper::getFileFromRepoName(
@@ -59,7 +77,7 @@ class QrCodeImage Implements IDynamicFile {
 		);
 
 		if ( $file instanceof File && $file->exists() ) {
-			return new Stream( fopen( $sourcePath . $filename, 'rb' ) );
+			return [ Status::newGood(), $file ];
 		}
 		$title = $this->titleFactory->newFromText( $this->pagename );
 		$url = $title->getFullURL( $this->query );
@@ -77,17 +95,6 @@ class QrCodeImage Implements IDynamicFile {
 			$filename,
 			'QrCode'
 		);
-		if ( !$status->isGood() || !$file ) {
-			$messages = $status->getMessages( null );
-			$errorMessage = [];
-			foreach ( $messages as $message ) {
-				$errorMessage[] = Message::newFromSpecifier( $message )->text();
-			}
-			throw new Exception(
-				'FATAL: QrCode could not be saved! ' . implode( ', ', $errorMessage )
-			);
-		}
-
-		return new Stream( fopen( $sourcePath . $filename, 'rb' ) );
+		return [ $status, $file ];
 	}
 }
