@@ -9,8 +9,8 @@ use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\Tag\Tag;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Parser\Parser;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\DynamicFileDispatcherFactory;
-use Parser;
 use PPFrame;
 
 class QrCode extends Tag {
