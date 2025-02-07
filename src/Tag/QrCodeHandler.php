@@ -6,9 +6,9 @@ use BlueSpice\QrCode\Tag\QrCode as TagQrCode;
 use BlueSpice\Tag\Handler;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Html\Html;
+use MediaWiki\Parser\Parser;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\DynamicFileDispatcherFactory;
-use Parser;
 use PPFrame;
 
 class QrCodeHandler extends Handler {
