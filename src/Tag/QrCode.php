@@ -10,8 +10,8 @@ use BlueSpice\Tag\Tag;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\PPFrame;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\DynamicFileDispatcherFactory;
-use PPFrame;
 
 class QrCode extends Tag {
 
