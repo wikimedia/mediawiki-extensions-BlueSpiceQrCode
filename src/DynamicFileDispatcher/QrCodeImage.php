@@ -70,7 +70,7 @@ class QrCodeImage implements IDynamicFile {
 	 */
 	public function generate(): array {
 		$id = md5( $this->pagename . $this->query . $this->size );
-		$filename = $id . ".png";
+		$filename = ucfirst( $id . ".png" );
 		$file = BsFileSystemHelper::getFileFromRepoName(
 			$filename,
 			'QrCode'
