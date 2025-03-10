@@ -32,7 +32,9 @@ class QrCodeHandler extends Handler {
 	 * @param DynamicFileDispatcherFactory $dfdFactory
 	 */
 	public function __construct( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame, RequestContext $context, TitleFactory $titleFactory, DynamicFileDispatcherFactory $dfdFactory ) {
+		PPFrame $frame, RequestContext $context, TitleFactory $titleFactory,
+		DynamicFileDispatcherFactory $dfdFactory
+	) {
 		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
 		$this->context = $context;
 		$this->titleFactory = $titleFactory;
