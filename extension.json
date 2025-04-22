@@ -56,6 +56,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\QrCode\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\QrCode\\Tests\\": "tests/phpunit/"
+	},
 	"ResourceModules": {
 		"ext.qrcode.dialog": {
 			"scripts": [
