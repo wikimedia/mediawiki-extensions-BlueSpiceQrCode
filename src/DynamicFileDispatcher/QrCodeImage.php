@@ -4,6 +4,7 @@ namespace BlueSpice\QrCode\DynamicFileDispatcher;
 
 use BsFileSystemHelper;
 use Endroid\QrCode\QrCode;
+use Endroid\QrCode\Writer\PngWriter;
 use Exception;
 use File;
 use MediaWiki\Message\Message;
@@ -84,7 +85,9 @@ class QrCodeImage implements IDynamicFile {
 
 		$qrCode = new QrCode( $url );
 		$qrCode->setSize( $this->size );
-		$qrCodeSrc = $qrCode->writeString();
+		$writer = new PngWriter();
+		$result = $writer->write( $qrCode );
+		$qrCodeSrc = $result->getString();
 
 		$status = BsFileSystemHelper::saveToDataDirectory(
 			$filename,
