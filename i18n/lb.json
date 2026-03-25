@@ -15,5 +15,9 @@
 	"bs-qr-code-tag-attr-size-label": "Gréisst",
 	"bs-qr-code-droplet-name": "QR-Code",
 	"bs-qr-code-tag-attr-size-option-small": "kleng",
-	"bs-qr-code-tag-attr-size-option-large": "grouss"
+	"bs-qr-code-tag-attr-size-option-large": "grouss",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-Code fir $1",
+	"apihelp-bs-qr-code-param-size": "Gréisst vum QR-Code",
+	"bs-qr-code-tag-attr-desc-label": "Beschreiwung",
+	"bs-qr-code-tag-attr-size-option-medium": "mëttel"
 }
