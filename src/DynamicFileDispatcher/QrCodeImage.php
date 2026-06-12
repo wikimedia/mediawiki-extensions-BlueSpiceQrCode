@@ -2,7 +2,6 @@
 
 namespace BlueSpice\QrCode\DynamicFileDispatcher;
 
-use BsFileSystemHelper;
 use Endroid\QrCode\QrCode;
 use Endroid\QrCode\Writer\PngWriter;
 use Exception;
@@ -12,7 +11,9 @@ use MediaWiki\Rest\Stream;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFile;
+use MWStake\MediaWiki\Component\FileStorageUtilities\StorageHandler;
 use Psr\Http\Message\StreamInterface;
+use RepoGroup;
 
 class QrCodeImage implements IDynamicFile {
 
@@ -28,17 +29,34 @@ class QrCodeImage implements IDynamicFile {
 	/** @var int */
 	private $size;
 
+	/** @var RepoGroup */
+	private $repoGroup;
+
+	/** @var StorageHandler */
+	private $storageHandler;
+
 	/**
 	 * @param TitleFactory $titleFactory
 	 * @param string $pagename
 	 * @param string $query
 	 * @param int $size
+	 * @param RepoGroup $repoGroup
+	 * @param StorageHandler $storageHandler
 	 */
-	public function __construct( TitleFactory $titleFactory, string $pagename, string $query, int $size ) {
+	public function __construct(
+		TitleFactory $titleFactory,
+		string $pagename,
+		string $query,
+		int $size,
+		RepoGroup $repoGroup,
+		StorageHandler $storageHandler
+	) {
 		$this->titleFactory = $titleFactory;
 		$this->pagename = $pagename;
 		$this->query = $query;
 		$this->size = $size;
+		$this->repoGroup = $repoGroup;
+		$this->storageHandler = $storageHandler;
 	}
 
 	/**
@@ -70,12 +88,10 @@ class QrCodeImage implements IDynamicFile {
 	 * @return array
 	 */
 	public function generate(): array {
+		$repo = $this->repoGroup->getRepoByName( 'QrCode' );
 		$id = md5( $this->pagename . $this->query . $this->size );
 		$filename = ucfirst( $id . ".png" );
-		$file = BsFileSystemHelper::getFileFromRepoName(
-			$filename,
-			'QrCode'
-		);
+		$file = $repo->newFile( $filename );
 
 		if ( $file instanceof File && $file->exists() ) {
 			return [ Status::newGood(), $file ];
@@ -89,15 +105,11 @@ class QrCodeImage implements IDynamicFile {
 		$result = $writer->write( $qrCode );
 		$qrCodeSrc = $result->getString();
 
-		$status = BsFileSystemHelper::saveToDataDirectory(
-			$filename,
-			$qrCodeSrc,
-			'QrCode'
-		);
-		$file = BsFileSystemHelper::getFileFromRepoName(
-			$filename,
-			'QrCode'
-		);
+		$status = $this->storageHandler->newTransaction()
+			->create( $file->getName(), $qrCodeSrc, 'QrCode', [ 'overwrite' => true ] )
+			->commit();
+
+		$file = $repo->newFile( $filename );
 		return [ $status, $file ];
 	}
 }
