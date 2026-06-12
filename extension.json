@@ -84,7 +84,7 @@
 		},
 		"registerDynamicFileModule": {
 			"class": "\\BlueSpice\\QrCode\\Hook\\RegisterDynamicFileModule",
-			"services": [ "TitleFactory" ]
+			"services": [ "TitleFactory", "RepoGroup", "MWStake.StorageUtilities" ]
 		},
 		"registerTags": {
 			"class": "\\BlueSpice\\QrCode\\HookHandler\\RegisterTags",
