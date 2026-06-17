@@ -1,6 +1,8 @@
 [
 	{
 		"resourceModule": "ext.qrcode.dialog",
-		"maxSize": "0.9 kB"
+		"maxSize": "2 kB",
+		"@note": "Ignore oojs-ui*",
+		"ignoreDependencies": true
 	}
 ]
