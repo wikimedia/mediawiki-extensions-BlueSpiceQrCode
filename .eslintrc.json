@@ -9,8 +9,11 @@
 		"sourceType": "commonjs"
 	},
 	"globals": {
+		"bs": "readonly",
 		"jQuery": "readonly",
-		"mediaWiki": "readonly",
-		"bs": "readonly"
+		"mediaWiki": "readonly"
+	},
+	"rules": {
+		"no-jquery/no-done-fail": "warn"
 	}
 }

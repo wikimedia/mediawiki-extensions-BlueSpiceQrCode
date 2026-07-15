@@ -11,7 +11,6 @@ bs.ui.dialog.QrCodeDialog = function ( config ) {
 	const altMsg = config.altMsg;
 	const page = config.page || '';
 	if ( altMsg !== '' ) {
-		// eslint-disable-next-line mediawiki/msg-doc
 		const alt = mw.message( altMsg, page ).text();
 		this.alt = ' alt="' + alt + '"';
 	}
