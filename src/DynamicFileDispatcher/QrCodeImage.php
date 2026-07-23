@@ -2,6 +2,8 @@
 
 namespace BlueSpice\QrCode\DynamicFileDispatcher;
 
+use Endroid\QrCode\Encoding\Encoding;
+use Endroid\QrCode\ErrorCorrectionLevel;
 use Endroid\QrCode\QrCode;
 use Endroid\QrCode\Writer\PngWriter;
 use Exception;
@@ -99,8 +101,13 @@ class QrCodeImage implements IDynamicFile {
 		$title = $this->titleFactory->newFromText( $this->pagename );
 		$url = $title->getFullURL( $this->query );
 
-		$qrCode = new QrCode( $url );
-		$qrCode->setSize( $this->size );
+		$qrCode = new QrCode(
+			$url,
+			new Encoding( 'UTF-8' ),
+			ErrorCorrectionLevel::Low,
+			$this->size
+		);
+
 		$writer = new PngWriter();
 		$result = $writer->write( $qrCode );
 		$qrCodeSrc = $result->getString();
