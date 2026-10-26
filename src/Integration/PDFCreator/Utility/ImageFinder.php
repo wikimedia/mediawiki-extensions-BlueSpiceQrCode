@@ -8,9 +8,9 @@ use DOMXPath;
 use File;
 use FileRepo;
 use MediaWiki\Extension\PDFCreator\Utility\WikiFileResource;
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\Utils\UrlUtils;
-use RepoGroup;
 
 class ImageFinder {
 

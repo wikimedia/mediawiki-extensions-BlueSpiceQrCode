@@ -7,9 +7,9 @@ use MediaWiki\Extension\PDFCreator\IPreProcessor;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
 use MediaWiki\Extension\PDFCreator\Utility\ImageUrlUpdater;
 use MediaWiki\Extension\PDFCreator\Utility\ImageWidthUpdater;
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\Utils\UrlUtils;
-use RepoGroup;
 
 class ImageProcessor implements IPreProcessor {
 

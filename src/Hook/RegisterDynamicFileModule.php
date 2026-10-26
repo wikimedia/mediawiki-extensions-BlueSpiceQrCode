@@ -3,10 +3,10 @@
 namespace BlueSpice\QrCode\Hook;
 
 use BlueSpice\QrCode\DynamicFileDispatcher\QrCode;
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\MWStakeDynamicFileDispatcherRegisterModuleHook;
 use MWStake\MediaWiki\Component\FileStorageUtilities\StorageHandler;
-use RepoGroup;
 
 class RegisterDynamicFileModule implements MWStakeDynamicFileDispatcherRegisterModuleHook {
 

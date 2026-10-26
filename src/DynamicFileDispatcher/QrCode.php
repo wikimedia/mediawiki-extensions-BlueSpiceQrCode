@@ -2,12 +2,12 @@
 
 namespace BlueSpice\QrCode\DynamicFileDispatcher;
 
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Permissions\Authority;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFile;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFileModule;
 use MWStake\MediaWiki\Component\FileStorageUtilities\StorageHandler;
-use RepoGroup;
 
 class QrCode implements IDynamicFileModule {
 
