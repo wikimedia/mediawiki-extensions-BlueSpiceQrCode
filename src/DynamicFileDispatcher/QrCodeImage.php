@@ -8,6 +8,7 @@ use Endroid\QrCode\QrCode;
 use Endroid\QrCode\Writer\PngWriter;
 use Exception;
 use File;
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Message\Message;
 use MediaWiki\Rest\Stream;
 use MediaWiki\Status\Status;
@@ -15,7 +16,6 @@ use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFile;
 use MWStake\MediaWiki\Component\FileStorageUtilities\StorageHandler;
 use Psr\Http\Message\StreamInterface;
-use RepoGroup;
 
 class QrCodeImage implements IDynamicFile {
 
