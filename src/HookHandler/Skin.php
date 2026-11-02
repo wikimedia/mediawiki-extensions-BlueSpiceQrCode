@@ -4,7 +4,7 @@ namespace BlueSpice\QrCode\HookHandler;
 
 use Action;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
-use SkinTemplate;
+use MediaWiki\Skin\SkinTemplate;
 
 class Skin implements SkinTemplateNavigation__UniversalHook {
 	/**
