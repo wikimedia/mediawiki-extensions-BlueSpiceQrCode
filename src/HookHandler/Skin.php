@@ -2,7 +2,7 @@
 
 namespace BlueSpice\QrCode\HookHandler;
 
-use Action;
+use MediaWiki\Actions\Action;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\Skin\SkinTemplate;
 
